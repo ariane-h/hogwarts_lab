@@ -11,5 +11,10 @@
     <p>Age: <%= @student.age %></p>
     <hr>
 
+    <form action="/students/<%= @student.id %>/delete" method="post" >
+      <label for="delete"></label>
+      <input type="submit" value="Delete Student">
+    </form>
+
   </body>
 </html>
